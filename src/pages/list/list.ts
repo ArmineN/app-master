@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
 
@@ -13,7 +13,7 @@ export class ListPage {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
-
+  hadList: boolean = false;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
@@ -30,7 +30,10 @@ export class ListPage {
       });
     }
   }
-
+  getList() {
+      this.hadList = true;
+      return 'mmmmmmmmmmmm list'
+    }
   itemTapped(event, item) {
     this.navCtrl.push(ItemDetailsPage, {
       item: item

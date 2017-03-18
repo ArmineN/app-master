@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
+import { ListPage } from '../list/list';
 
 
 @Component({
@@ -6,7 +7,24 @@ import { Component } from '@angular/core';
   templateUrl: 'hello-ionic.html'
 })
 export class HelloIonicPage {
-  constructor() {
+    list = ListPage;
+    constructor() {
 
   }
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
